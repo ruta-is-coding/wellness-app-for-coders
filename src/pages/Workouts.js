@@ -26,7 +26,10 @@ const Workouts = (props) => {
       <div className="grid grid-cols-4 gap-4 justify-items-center">
         {data &&
           data.map((exercise) => (
-            <div className="rounded overflow-hidden shadow-lg mb-5 p-5 bg-lime-100 w-40 h-40 flex justify-center items-center">
+            <div
+              className="rounded overflow-hidden shadow-lg mb-5 p-5 bg-lime-100 w-40 h-40 flex justify-center items-center"
+              key={exercise.name}
+            >
               <a href="/" className="text-center font-bold">
                 {exercise.name}
               </a>

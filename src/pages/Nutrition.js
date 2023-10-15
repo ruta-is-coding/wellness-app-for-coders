@@ -26,7 +26,7 @@ const Nutrition = (props) => {
       <div className="grid grid-cols-4 gap-x-4 gap-y-7 justify-items-center">
         {meals &&
           meals.map((meal) => (
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center" key={meal.id}>
               <img src={meal.image} alt={meal.title} className="w-32" />
               <a href="/">{meal.title}</a>
             </div>

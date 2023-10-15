@@ -4,7 +4,7 @@ const About = (props) => {
   return (
     <>
       <h1>{props.title}</h1>
-      <section className="grid md:grid-cols-2 md:gap-9 gap-3 md:items-center">
+      <section className="grid md:grid-cols-2 md:gap-14 gap-3 md:items-center">
         <img src={myImage} alt="My photo" className="w-100 rounded-lg my-3" />
         <div>
           <p className="md:mb-5 mb-3">

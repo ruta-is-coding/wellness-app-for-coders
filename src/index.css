@@ -20,7 +20,7 @@ a {
 h1 {
   @apply md:my-14 mt-7 mb-3 text-lime-600 text-center md:text-6xl text-3xl font-light w-8/12 mx-auto;
 }
-.container {
+main .container {
   @apply mx-auto lg:max-w-3xl;
 }
 p {
