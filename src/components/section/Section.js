@@ -1,7 +1,7 @@
 const Section = ({ children }) => {
   return (
-    <main className="pt-10">
-      <div className="container">{children}</div>
+    <main className="md:pt-10">
+      <div className="container p-7">{children}</div>
     </main>
   );
 };

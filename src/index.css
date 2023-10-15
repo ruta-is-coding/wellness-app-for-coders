@@ -18,8 +18,13 @@ a {
   @apply text-lime-400 lg:text-xl text-base font-normal hover:text-lime-600 hover:scale-110;
 }
 h1 {
-  @apply my-14 text-lime-600 text-center md:text-6xl text-3xl font-light w-8/12 mx-auto;
+  @apply md:my-14 mt-7 mb-3 text-lime-600 text-center md:text-6xl text-3xl font-light w-8/12 mx-auto;
 }
 .container {
   @apply mx-auto lg:max-w-3xl;
+}
+p {
+  @apply md:text-left text-justify;
+  max-width: 90ch;
+  line-height: 1.87rem;
 }
