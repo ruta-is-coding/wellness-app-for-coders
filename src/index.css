@@ -6,6 +6,7 @@
 
 * {
   font-size: 1.25rem;
+  line-height: 1.87rem;
   color: #3f3f46;
   font-family: "Lato";
 }
@@ -26,5 +27,4 @@ main .container {
 p {
   @apply md:text-left text-justify md:text-xl md:font-normal text-base font-light;
   max-width: 90ch;
-  line-height: 1.87rem;
 }

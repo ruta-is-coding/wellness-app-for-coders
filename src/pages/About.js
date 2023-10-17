@@ -1,4 +1,5 @@
 import myImage from "../images/me.jpg";
+import { Link } from "react-router-dom";
 
 const About = (props) => {
   return (
@@ -15,7 +16,7 @@ const About = (props) => {
             skills. I'm eager to work in the Tech industry and learn more about
             web and software development.
           </p>
-          <a href="/contact">Checkout my contact info here</a>
+          <Link to="/contact">Checkout my contact info here</Link>
         </div>
       </section>
     </>

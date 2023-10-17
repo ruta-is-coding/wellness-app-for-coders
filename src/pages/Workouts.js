@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Workouts = (props) => {
   const [data, setData] = useState([]);
@@ -25,14 +26,14 @@ const Workouts = (props) => {
       <h1>{props.title}</h1>
       <div className="grid grid-cols-4 gap-4 justify-items-center">
         {data &&
-          data.map((exercise) => (
+          data.map((exercise, index) => (
             <div
               className="rounded overflow-hidden shadow-lg mb-5 p-5 bg-lime-100 w-40 h-40 flex justify-center items-center"
-              key={exercise.name}
+              key={index}
             >
-              <a href="/" className="text-center font-bold">
+              <Link to="/" className="text-center font-bold">
                 {exercise.name}
-              </a>
+              </Link>
             </div>
           ))}
       </div>

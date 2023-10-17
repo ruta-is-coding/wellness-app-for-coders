@@ -6,6 +6,7 @@ import Nutrition from "./pages/Nutrition";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Section from "./components/section/Section";
+import Meal from "./pages/Meal";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           />
           <Route path="/about" element={<About title="Hello!" />} />
           <Route path="/contact" element={<Contact title="Find me on:" />} />
+          <Route path="/meal/:id" element={<Meal />} />
         </Routes>
       </Section>
     </BrowserRouter>
