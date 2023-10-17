@@ -12,26 +12,26 @@ const Nutrition = (props) => {
     console.log(query);
   };
 
-  useEffect(() => {
-    const apiKey = process.env.REACT_APP_API_KEY;
-    const url = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query=${query}&diet=vegetarian&maxSugar=30&maxAlcohol=0&number=100`;
-    try {
-      fetch(url, {
-        headers: {
-          "X-RapidAPI-Key": apiKey,
-          "X-RapidAPI-Host":
-            "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-        },
-      })
-        .then((resp) => resp.json())
-        .then((resp) => {
-          setMeals(resp.results);
-          console.log(resp.results);
-        });
-    } catch (error) {
-      console.error(error);
-    }
-  }, [query]);
+  // useEffect(() => {
+  //   const apiKey = process.env.REACT_APP_API_KEY;
+  //   const url = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query=${query}&diet=vegetarian&maxSugar=30&maxAlcohol=0&number=100`;
+  //   try {
+  //     fetch(url, {
+  //       headers: {
+  //         "X-RapidAPI-Key": apiKey,
+  //         "X-RapidAPI-Host":
+  //           "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+  //       },
+  //     })
+  //       .then((resp) => resp.json())
+  //       .then((resp) => {
+  //         setMeals(resp.results);
+  //         console.log(resp.results);
+  //       });
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // }, [query]);
 
   return (
     <>

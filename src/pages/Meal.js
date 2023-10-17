@@ -13,26 +13,26 @@ const Meal = () => {
     veryHealthy: "",
   });
 
-  useEffect(() => {
-    const apiKey = process.env.REACT_APP_API_KEY;
-    const url = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${id}/information`;
-    try {
-      fetch(url, {
-        headers: {
-          "X-RapidAPI-Key": apiKey,
-          "X-RapidAPI-Host":
-            "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-        },
-      })
-        .then((resp) => resp.json())
-        .then((resp) => {
-          setRecipe(resp);
-          console.log(resp);
-        });
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
+  // useEffect(() => {
+  // const apiKey = process.env.REACT_APP_API_KEY;
+  //   const url = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${id}/information`;
+  //   try {
+  //     fetch(url, {
+  //       headers: {
+  //         "X-RapidAPI-Key": apiKey,
+  //         "X-RapidAPI-Host":
+  //           "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+  //       },
+  //     })
+  //       .then((resp) => resp.json())
+  //       .then((resp) => {
+  //         setRecipe(resp);
+  //         console.log(resp);
+  //       });
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // }, []);
   return (
     recipe && (
       <>
